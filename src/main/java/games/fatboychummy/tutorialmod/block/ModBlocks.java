@@ -25,6 +25,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)
                     .sound(SoundType.BASALT)
                     .strength(1f, 0.6f)
+                    .requiresCorrectToolForDrops()
             ));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
