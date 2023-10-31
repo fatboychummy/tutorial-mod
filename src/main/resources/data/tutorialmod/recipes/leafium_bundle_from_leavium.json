@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:leafium_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:leafium_bundle",
+    "count": 9
+  }
+}

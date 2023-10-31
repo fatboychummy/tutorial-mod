@@ -1,6 +1,7 @@
 package games.fatboychummy.tutorialmod.item;
 
 import games.fatboychummy.tutorialmod.TutorialMod;
+import games.fatboychummy.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,8 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.LEAFIUM.get());
                         pOutput.accept(ModItems.LEAFIUM_BUNDLE.get());
+
+                        pOutput.accept(ModBlocks.LEAFIUM_BLOCK.get());
                     })
                     .build());
 

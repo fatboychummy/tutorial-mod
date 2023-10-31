@@ -1,6 +1,7 @@
 package games.fatboychummy.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import games.fatboychummy.tutorialmod.block.ModBlocks;
 import games.fatboychummy.tutorialmod.item.ModCreativeModeTabs;
 import games.fatboychummy.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class TutorialMod
 
         // Register the items.
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
