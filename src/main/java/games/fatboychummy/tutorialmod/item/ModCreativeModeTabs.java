@@ -18,10 +18,16 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEAFIUM.get()))
                     .title(Component.translatable("creativetab.leafium_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        // Basic items
                         pOutput.accept(ModItems.LEAFIUM.get());
                         pOutput.accept(ModItems.LEAFIUM_BUNDLE.get());
 
+                        // Custom items
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+
+                        // Basic blocks
                         pOutput.accept(ModBlocks.LEAFIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.LEAFIUM_ORE.get());
                     })
                     .build());
 

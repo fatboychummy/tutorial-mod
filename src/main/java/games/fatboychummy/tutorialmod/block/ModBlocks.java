@@ -2,11 +2,13 @@ package games.fatboychummy.tutorialmod.block;
 
 import games.fatboychummy.tutorialmod.TutorialMod;
 import games.fatboychummy.tutorialmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +29,13 @@ public class ModBlocks {
                     .strength(1f, 0.6f)
                     .requiresCorrectToolForDrops()
             ));
+
+    public static final RegistryObject<Block> LEAFIUM_ORE = registerBlock("leafium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops(),
+                    UniformInt.of(1, 5)
+            ));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

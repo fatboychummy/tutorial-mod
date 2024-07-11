@@ -1,6 +1,7 @@
 package games.fatboychummy.tutorialmod.item;
 
 import games.fatboychummy.tutorialmod.TutorialMod;
+import games.fatboychummy.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEAFIUM_BUNDLE = ITEMS.register("leafium_bundle",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     // The method which actually registers things
     public static void register(IEventBus eventBus) {

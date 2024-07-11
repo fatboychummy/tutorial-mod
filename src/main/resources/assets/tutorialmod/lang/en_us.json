@@ -1,8 +1,10 @@
 {
   "item.tutorialmod.leafium": "Leafium",
   "item.tutorialmod.leafium_bundle": "Leafium Bundle",
+  "item.tutorialmod.metal_detector": "Metal Detector",
 
   "block.tutorialmod.leafium_block": "Leavium",
+  "block.tutorialmod.leafium_ore": "Leafium Ore",
 
   "creativetab.leafium_tab": "Leafium Tutorial"
 }
