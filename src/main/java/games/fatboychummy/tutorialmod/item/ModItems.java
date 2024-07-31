@@ -1,6 +1,7 @@
 package games.fatboychummy.tutorialmod.item;
 
 import games.fatboychummy.tutorialmod.TutorialMod;
+import games.fatboychummy.tutorialmod.item.custom.FuelItem;
 import games.fatboychummy.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,9 +16,9 @@ public class ModItems {
 
     // Our items
     public static final RegistryObject<Item> LEAFIUM = ITEMS.register("leafium",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 10));
     public static final RegistryObject<Item> LEAFIUM_BUNDLE = ITEMS.register("leafium_bundle",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 100));
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
