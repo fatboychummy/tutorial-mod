@@ -1,6 +1,7 @@
 package games.fatboychummy.tutorialmod.block;
 
 import games.fatboychummy.tutorialmod.TutorialMod;
+import games.fatboychummy.tutorialmod.block.custom.SoundBlock;
 import games.fatboychummy.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -34,6 +35,11 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)
                     .strength(2f, 0.5f).requiresCorrectToolForDrops(),
                     UniformInt.of(1, 5)
+            ));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops()
             ));
 
 

@@ -28,6 +28,9 @@ public class ModCreativeModeTabs {
                         // Basic blocks
                         pOutput.accept(ModBlocks.LEAFIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.LEAFIUM_ORE.get());
+
+                        // Custom blocks
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
 
