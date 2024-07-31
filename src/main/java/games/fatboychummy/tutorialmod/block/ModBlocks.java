@@ -35,7 +35,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)
                     .strength(2f, 0.5f).requiresCorrectToolForDrops(),
                     UniformInt.of(1, 5)
-            ), 15);
+            ), 12);
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
